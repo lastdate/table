@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Grades</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>List of Students in Grade 12/A</h1>
+
+      <!-- Form to add student details -->
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Enter Name" />
+        <input type="text" id="rollNumber" placeholder="Enter Roll Number" />
+        <input type="text" id="grade" placeholder="Enter Grade" />
+        <button class="btn" id="addStudent">Add Student</button>
+        <button class="btn" id="savePDF">Save as PDF</button>
+        <button class="btn" id="shareApp">Share App</button>
+      </div>
+
+      <!-- Text customization tools -->
+      <div class="tools">
+        <label for="colorPicker">Text Color: </label>
+        <input type="color" id="colorPicker" />
+        <label for="fontPicker">Font Family: </label>
+        <select id="fontPicker">
+          <option value="Arial">Arial</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+      </div>
+
+      <table id="studentTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Grade</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be added dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+  </body>
+</html>
